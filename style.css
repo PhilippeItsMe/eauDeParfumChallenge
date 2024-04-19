@@ -34,16 +34,19 @@ body {
 main {
     background-color: white;
     border-radius: 0.5em;
+    overflow: hidden;
     width: 90%;
     margin: auto;
-
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Card */
 
 img {
     width:100%;
-    border-radius: 0.5em 0.5em 0 0;
+    height: 100%;
+    object-fit: cover;
 }
 section {
     margin: 1.5em 1.5em 2em 1.5em;
